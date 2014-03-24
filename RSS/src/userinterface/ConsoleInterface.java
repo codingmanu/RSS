@@ -40,7 +40,7 @@ public class ConsoleInterface extends Thread {
 
                     ArrayList<String> feeds;
                     try {
-                        feeds = FileManager.readFeeds();
+                        feeds = FileManager.readFeedList();
                         System.out.println("\n****Listado de Feeds:****");
                         if (!feeds.isEmpty()) {
                             for (String n : feeds) {
