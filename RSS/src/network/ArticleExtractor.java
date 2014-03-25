@@ -19,6 +19,9 @@ public class ArticleExtractor {
                 beginPosition = s.indexOf("<item>");
                 endPosition = s.indexOf("</item>");
 
+                if(beginPosition == -1 || endPosition == -1)
+                    continue;
+                
                 String stringItem = s.substring(beginPosition, endPosition);
 
                 String title = stringItem.substring(stringItem.indexOf("<title>") + 7, stringItem.indexOf("</title>"));

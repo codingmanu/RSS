@@ -27,5 +27,17 @@ public class WriteToFile {
         }
     }
     
-    
+    public static void appendItem(File file, String data){
+         try {
+
+            FileWriter fw = new FileWriter(file, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            bw.append(data);
+            bw.newLine();
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

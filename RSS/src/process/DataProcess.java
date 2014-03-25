@@ -11,7 +11,7 @@ public class DataProcess extends Thread {
     public void run() {
         while(true){
             try {
-                this.sleep(30000);
+                this.sleep(5000);
             } catch (InterruptedException ex) {
             }
             System.out.println("Procesando y descargando feeds...");
@@ -34,7 +34,8 @@ public class DataProcess extends Thread {
             System.out.println("Fin del proceso.");
             //Dormimos el hilo durante 30 minutos.
             try {
-                this.sleep(1800000);
+                //this.sleep(1800000);
+                this.sleep(10000);
             } catch (InterruptedException ex) {
             }
         }
