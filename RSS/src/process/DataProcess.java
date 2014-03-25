@@ -1,5 +1,6 @@
 package process;
 
+import database.DatabaseConnector;
 import file.FileManager;
 import item.Item;
 import network.*;
@@ -10,6 +11,14 @@ public class DataProcess extends Thread {
     @Override
     public void run() {
         while(true){
+            
+            try {
+                DatabaseConnector.connect();
+                DatabaseConnector.disconnect();
+            } catch (Exception e) {
+            }
+            
+            
             try {
                 this.sleep(5000);
             } catch (InterruptedException ex) {
