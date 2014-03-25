@@ -1,6 +1,7 @@
 package database;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import oracle.jdbc.pool.OracleDataSource;
@@ -14,8 +15,9 @@ public class DatabaseConnector {
 
     static Statement statement = null;
     static Connection connection = null;
+    static ResultSet result = null;
 
-    public static void connect() throws SQLException {
+    public static void connect(){
         try {
             String jdbcUrl = "jdbc:oracle:thin:@msgomezm.no-ip.org:1521:xe";
             String userid = "RSS";

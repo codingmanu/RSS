@@ -1,13 +1,62 @@
 package database;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class DatabaseOperations {
+
+    public static void checkTables() {
+
+        String[] tables = new String[]{"RSS.USERS", "RSS.FEEDLISTS", "RSS.FEEDS", "RSS.ITEMS"};
+
+        for (String s : tables) {
+            DatabaseConnector.connect();
+            try {
+                String sql = "select * from "+s;
+                DatabaseConnector.statement = DatabaseConnector.connection.prepareStatement(sql);
+                DatabaseConnector.result = DatabaseConnector.statement.executeQuery(sql);
+
+                if (DatabaseConnector.result.next()) {
+                    System.out.println("Existe la tabla "+s);
+                }
+            } catch (Exception e) {
+                String errorPK = "java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist";
+                    if (e.toString().equals(errorPK)) {
+                        System.out.println("No Existe la tabla "+s);
+                    }
+                    e.printStackTrace();
+            } finally {
+                DatabaseConnector.disconnect();
+            }
+        }
+    }
+}
+
+/*
+ * SELECT 
+ * 
+ * 
+ * public static void checkTables() {
+        DatabaseConnector.connect();
+        try {
+            String sql = "select * from RSS.USERS";
+            DatabaseConnector.statement = DatabaseConnector.connection.prepareStatement(sql);
+            DatabaseConnector.result = DatabaseConnector.statement.executeQuery(sql);
+            while (DatabaseConnector.result.next()) {
+                String str = DatabaseConnector.result.getString(1);
+                System.out.println("SELECTED FROM DB: "+str);
+            }
+        } catch (Exception e) {
+            System.out.println("ERROR");
+        } finally {
+            DatabaseConnector.disconnect();
+        }
+    }
+ * 
+ * 
+ * 
+ */
+    
+    /*
 
     public static void createTables() {            //for debugging, this will be in a SQL script.
         try {
@@ -268,3 +317,4 @@ public class DatabaseOperations {
         }
     }
 }
+*/

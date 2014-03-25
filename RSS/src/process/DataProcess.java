@@ -1,6 +1,7 @@
 package process;
 
 import database.DatabaseConnector;
+import database.DatabaseOperations;
 import file.FileManager;
 import item.Item;
 import network.*;
@@ -11,22 +12,14 @@ public class DataProcess extends Thread {
     @Override
     public void run() {
         while(true){
-            
-            try {
-                DatabaseConnector.connect();
-                DatabaseConnector.disconnect();
-            } catch (Exception e) {
-            }
-            
-            
             try {
                 this.sleep(5000);
             } catch (InterruptedException ex) {
             }
             System.out.println("Procesando y descargando feeds...");
             System.out.println("Por favor, no interactúe con el menú.");
-            //Implementar la descarga de los artículos de los RSS.
-            
+
+            //DatabaseOperations.checkTables();
             
             FileManager.checkAndCreateFeedFiles();
             
