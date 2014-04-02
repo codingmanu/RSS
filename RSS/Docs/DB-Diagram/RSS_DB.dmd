@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RSS_DB" id="40EB7161-4B57-60E3-08F5-A8C5C3A0AD5F" version="3.5">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 10:29:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>40EB7161-4B57-60E3-08F5-A8C5C3A0AD5F</designId>
+</OSDM_Design>

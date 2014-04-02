@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="27185E87-9665-6CA0-0C59-737D85EEA66D" name="CATEGORIES" seqName="seg_0"/>
+   <object objectType="Table" objectID="DD04337E-5995-31F4-20B9-0CC105496D14" name="FEEDFOLDERS" seqName="seg_0"/>
+   <object objectType="Table" objectID="FED38534-C716-20CE-CA2C-4F04FC6ED216" name="FEEDS" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="76EBF062-6BB7-9B0F-B69F-A0F3E0B2236F" name="FEEDS_CATEGORIES_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

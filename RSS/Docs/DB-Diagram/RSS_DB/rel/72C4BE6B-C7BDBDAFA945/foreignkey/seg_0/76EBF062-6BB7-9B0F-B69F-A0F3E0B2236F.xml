@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="76EBF062-6BB7-9B0F-B69F-A0F3E0B2236F" name="FEEDS_CATEGORIES_FK">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:15:15 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<containerWithKeyObject>FED38534-C716-20CE-CA2C-4F04FC6ED216</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>4850A431-A4FB-27AF-452A-DCFAF0DC3015</localFKIndex>
+<keyObject>474B9D48-0337-1F88-5624-863AFC91E6F7</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

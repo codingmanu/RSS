@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="4037CD8E-FCA9-E420-3DB0-D402A023AB16" name="RSS_Tables" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

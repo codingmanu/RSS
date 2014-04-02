@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="CBADC30B-15CB-BDF6-4C5E-5C956EE720E3" mainViewID="A2E88DC0-EFE2-A1F7-84C2-46E54BBBFBC6">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 10:29:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

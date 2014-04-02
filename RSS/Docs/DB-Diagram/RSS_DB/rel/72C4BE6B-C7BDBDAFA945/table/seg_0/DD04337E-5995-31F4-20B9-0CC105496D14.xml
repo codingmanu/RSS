@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD04337E-5995-31F4-20B9-0CC105496D14" name="FEEDFOLDERS">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 10:29:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FEEDFOLDER_ID" id="32DC108C-EA4E-4300-2724-309A7820EA64">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 10:59:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="E3C4E059-2669-AC0E-A487-ED28203AB9A6">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:00:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="891A5877-38E0-53DC-7C8C-828A6CBAEB70">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:01:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visibility" id="BE08A276-33EB-16AB-44AF-03C445486558">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:01:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDCFF027-F930-BFD6-D6EB-7DA8DC08690E" name="FEEDFOLDERS_PK">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:02:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32DC108C-EA4E-4300-2724-309A7820EA64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="FEEDFOLDERS_VISIBILITY_CHK" directorySegmentName="seg_0" id="18D8166C-4031-EE68-2AEB-ACC5C60AE683">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:03:27 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<rule>CHECK (VISIBILITY = &apos;PU&apos; OR VISIBILITY = &apos;PR&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

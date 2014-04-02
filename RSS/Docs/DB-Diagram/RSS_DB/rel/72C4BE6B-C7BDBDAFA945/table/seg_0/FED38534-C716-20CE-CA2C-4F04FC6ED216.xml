@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FED38534-C716-20CE-CA2C-4F04FC6ED216" name="FEEDS">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:05:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FEED_ID" id="C627984F-C607-29B3-E790-C7207DA318A8">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:21:34 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="6A1048A2-EA59-6FD2-519B-FDCCA4451612">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:05:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2048</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="77AA2966-9AED-1EAF-8A8E-25FCE1B849C7">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:06:40 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="B0C34404-EF7C-73E4-E41F-945EEE53545E">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:05:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="FA366BCB-B56E-E3D1-0DD7-1F5250016621">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:09:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<delegate>9658E6B1-389C-E82E-927E-58A1C752B968</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76EBF062-6BB7-9B0F-B69F-A0F3E0B2236F" referredColumn="9658E6B1-389C-E82E-927E-58A1C752B968"/>
+</associations>
+</Column>
+<Column name="rating" id="5DE1EDBF-4670-5E73-3A99-EB5CB0691262">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:05:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC02D4F8-84BC-624B-88F4-9481514A2AD7" name="FEEDS_PK">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:05:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C627984F-C607-29B3-E790-C7207DA318A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4850A431-A4FB-27AF-452A-DCFAF0DC3015" name="FEEDS_CATEGORIES_FK">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 11:15:15 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA366BCB-B56E-E3D1-0DD7-1F5250016621"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

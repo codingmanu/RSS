@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="59F0DEC1-C6EC-0E94-91DF-38F932D4C018">
+<createdBy>1-DAM</createdBy>
+<createdTime>2014-04-02 10:29:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>RSS_DB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>
